@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn with RedSky</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">Learn with RedSky</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#internet" class="nav-item text-gray-700 hover:text-indigo-600">Internet</a>
+                    <a href="#http" class="nav-item text-gray-700 hover:text-indigo-600">HTTP/HTTPS</a>
+                    <a href="#domain" class="nav-item text-gray-700 hover:text-indigo-600">Domain</a>
+                    <a href="#hosting" class="nav-item text-gray-700 hover:text-indigo-600">Hosting</a>
+                    <a href="#dns" class="nav-item text-gray-700 hover:text-indigo-600">DNS</a>
+                    <a href="#browser" class="nav-item text-gray-700 hover:text-indigo-600">Browser</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 px-4">
+        <div class="container mx-auto text-center text-white">
+            <h1 class="text-5xl font-bold mb-6 animate__animated animate__fadeInDown">
+                Memahami Cara Kerja Internet
+            </h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-20">
+        <!-- Internet Section -->
+        <section id="internet" class="mb-32">
+            <div class="card rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="section-header text-4xl font-bold mb-12">Internet</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div class="feature-card bg-gradient-to-r from-indigo-50 to-blue-50 p-6">
+                            <p class="text-gray-700">Internet adalah jaringan komputer global yang menghubungkan miliaran perangkat di seluruh dunia. Berikut adalah cara kerjanya secara umum:</p>
+                        </div>
+                        <div class="feature-card bg-gradient-to-r from-indigo-50 to-blue-50 p-6">
+                            <h3 class="text-xl font-semibold text-indigo-800 mb-4">Protokol TCP/IP</h3>
+                            <p class="text-gray-700">Internet bekerja menggunakan protokol TCP/IP (Transmission Control Protocol/Internet Protocol)</p>
+                        </div>
+                        <div class="feature-card bg-gradient-to-r from-purple-50 to-pink-50 p-6">
+                            <h3 class="text-xl font-semibold text-purple-800 mb-4">Paket Data</h3>
+                            <p class="text-gray-700">Data dipecah menjadi paket-paket kecil yang dikirim melalui berbagai rute, kemudian paket data disusun kembali di tujuan menjadi informasi yang utuh</p>
+                        </div>
+                        <div class="feature-card bg-gradient-to-r from-blue-50 to-cyan-50 p-6">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Routing</h3>
+                            <p class="text-gray-700">Router dan switch mengarahkan paket data ke tujuan yang tepat</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://vahid.blog/post/2020-12-15-how-the-internet-works-part-i-infrastructure/internet.jpg" alt="Internet Infrastructure" class="rounded-2xl shadow-lg floating" style="margin-left: 70px;"/>
+                        <div class="absolute bottom-4 left-4 glass-card px-4 py-2 rounded-lg ml-10">
+                            <p class="text-sm text-gray-600">Sumber: Internet Society (ISOC), "How Internet Works", 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTTP/HTTPS Section -->
+        <section id="http" class="mb-32">
+            <div class="card rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="section-header text-4xl font-bold mb-12">HTTP vs HTTPS</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="feature-card bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6">HTTP</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Protokol dasar untuk transfer data di web
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Bekerja dengan model request-response
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Data dikirim dalam bentuk plaintext
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="absolute bottom-4 left-4 px-4 py-2 rounded-lg ml-8">
+                        <p class="text-sm text-gray-600" style="margin-bottom: -10px;">Sumber: Mozilla Developer Network (MDN), "HTTP vs HTTPS", 2024</p>
+                    </div>
+                    <div class="feature-card bg-gradient-to-br from-green-500 to-emerald-600 text-white p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6">HTTPS</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Versi aman dari HTTP dengan enkripsi SSL/TLS
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Melindungi data sensitif selama transfer
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Menggunakan sertifikat digital untuk autentikasi
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain Section -->
+        <section id="domain" class="mb-32">
+            <div class="card rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="section-header text-4xl font-bold mb-12">Nama Domain</h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="feature-card bg-gradient-to-br from-pink-50 to-rose-50 p-8">
+                        <h3 class="text-xl font-semibold text-pink-800 mb-4">Apa itu domain</h3>
+                        <p class="text-gray-700">Domain adalah alamat yang digunakan untuk mengakses website. Struktur domain terdiri dari:</p>
+                        
+                    </div>
+                    <div class="feature-card bg-gradient-to-br from-purple-50 to-indigo-50 p-8">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-4">Top-level Domain</h3>
+                        <div class="space-y-3">
+                            <div class="bg-white rounded-lg p-3 shadow-sm">.com</div>
+                            <div class="bg-white rounded-lg p-3 shadow-sm">.org</div>
+                            <div class="bg-white rounded-lg p-3 shadow-sm">.net</div>
+                        </div>
+                    </div>
+                    <div class="feature-card bg-gradient-to-br from-pink-50 to-rose-50 p-8">
+                        <h3 class="text-xl font-semibold text-pink-800 mb-4">Second-level Domain</h3>
+                        <p class="text-gray-700">Nama website</p>
+                        <div class="bg-white rounded-lg p-3 mt-4 shadow-sm">example.com</div>
+                    </div>
+                    <div class="feature-card bg-gradient-to-br from-blue-50 to-cyan-50 p-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Subdomain</h3>
+                        <p class="text-gray-700">Bagian tambahan sebelum nama domain</p>
+                        <div class="bg-white rounded-lg p-3 mt-4 shadow-sm">blog.example.com</div>
+                    </div>
+                </div>
+                <div class="absolute bottom-4 left-4 px-4 py-2 rounded-lg ml-8">
+                    <p class="text-sm text-gray-600" style="margin-bottom: -10px;">Sumber: ICANN, "Domain Name System Explained", 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hosting Section -->
+        <section id="hosting" class="mb-32">
+            <div class="card rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="section-header text-4xl font-bold mb-12">Hosting</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div class="feature-card bg-gradient-to-r from-indigo-50 to-blue-50 p-6">
+                            <p class="text-gray-700">Hosting adalah sebuah layanan online yang digunakan untuk mengelola data situs atau aplikasi web oleh pengguna dan ditampilkan melalui via internet. File website yang tersimpan di dalam hosting berupa gambar, script, video, email, aplikasi, dan database (basis data)</p>
+                        </div>
+                        <div class="feature-card bg-gradient-to-r from-indigo-50 to-blue-50 p-6">
+                            <h3 class="text-xl font-semibold text-indigo-800 mb-4">Shared Hosting</h3>
+                            <p class="text-gray-700">berbagi server dengan website lain</p>
+                        </div>
+                        <div class="feature-card bg-gradient-to-r from-purple-50 to-pink-50 p-6">
+                            <h3 class="text-xl font-semibold text-purple-800 mb-4">VPS (Virtual Private Server)</h3>
+                            <p class="text-gray-700">server virtual dedikasi</p>
+                        </div>
+                        <div class="feature-card bg-gradient-to-r from-blue-50 to-cyan-50 p-6">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Dedicated Hosting</h3>
+                            <p class="text-gray-700">server fisik khusus</p>
+                        </div>
+                        <div class="feature-card bg-gradient-to-r from-blue-50 to-cyan-50 p-6">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Cloud Hosting</h3>
+                            <p class="text-gray-700">hosting berbasis cloud computing</p>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://www.nusa.id/wp-content/uploads/2024/01/Cloud-hosting-amico.png" alt="Internet Infrastructure" class="rounded-2xl shadow-lg floating" />
+                        <div class="absolute bottom-4 left-4 glass-card px-4 py-2 rounded-lg">
+                            <p class="text-sm text-gray-600">Sumber: https://www.sekawanmedia.co.id/blog/pengertian-hosting/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DNS Section -->
+        <section id="dns" class="mb-32">
+            <div class="card rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="section-header text-4xl font-bold mb-12">DNS (Domain Name System)</h2>
+                    <div class="feature-card bg-gradient-to-r from-indigo-50 to-blue-50 p-6">
+                        <p class="text-gray-700">
+                            DNS adalah sistem yang menerjemahkan nama domain menjadi alamat IP. Proses DNS meliputi: 
+                            <br></br>
+                            1. Browser meminta resolusi DNS
+                            <br></br>
+                            2. DNS Resolver mencari di cache lokal
+                            <br></br>
+                            3. Jika tidak ditemukan, mencari di Root DNS Server
+                            <br></br>
+                            4. Dilanjutkan ke TLD DNS Server
+                            <br></br>
+                            5. Akhirnya ke Authoritative DNS Server
+                        </p>
+                    </div>
+                    <div class="absolute bottom-4 left-4 px-4 py-2 rounded-lg ml-8">
+                        <p class="text-sm text-gray-600" style="margin-bottom: -10px;">Sumber: Cloudflare, "What is DNS?", 2024</p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Browser Section -->
+        <section id="browser" class="mb-32">
+            <div class="card rounded-3xl shadow-xl p-8 md:p-12">
+                <h2 class="section-header text-4xl font-bold mb-12">Browser</h2>
+                    <div class="feature-card bg-gradient-to-r from-purple-50 to-pink-50 p-6">
+                        <p class="text-gray-700">
+                            Browser adalah software yang digunakan untuk mengakses web. Cara kerja browser: 
+                            <br></br>
+                            1. Parsing HTML, CSS, dan JavaScript
+                            <br></br>
+                            2. Membuat DOM (Document Object Model)
+                            <br></br>
+                            3. Rendering halaman web
+                            <br></br>
+                            4. Menjalankan script
+                            <br></br>
+                            5. Mengelola cache dan cookies
+                        </p>
+                    </div>
+                    <div class="absolute bottom-4 left-4 px-4 py-2 rounded-lg ml-8">
+                        <p class="text-sm text-gray-600" style="margin-bottom: -10px;">Sumber: Google Chrome Developers, "Inside Browser", 2024</p>
+                    </div>
+            </div>
+        </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-purple-800 text-white py-8">
+    <div class="container mx-auto px-4">
+        <p class="text-center">Made by RedSky</p>
+    </div>
+</footer>
+</body>
+</html>
+        
